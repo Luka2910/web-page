@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: "#f9f9f9";
+}
+.pre-header{
+    background-color: #111618;
+    height: 60px;
+    color: white;
+    padding-top: 15px;
+}
+.pre-header .secondary-menu{
+    list-style: none;
+}
+.pre-header .secondary-menu li {
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+.pre-header .secondary-menu li a {
+    color: #707374;
+    text-transform: uppercase;
+    
+}
+.main-nav .main-menu{
+    list-style:none;
+    margin-top: 20px;
+}
+.main-nav .main-menu li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.main-nav .main-menu li a{
+    color: #707374;
+    text-transform: uppercase;
+}
+.main-cta-btn {
+background-color:blue ;
+border: 1px solid blue;
+padding: 8px;
+color:white;
+transition: 0.4s;/*kada stavimo mis lepo krene da se proidi*/
+}
+.main-cta-btn:hover{
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+
+}
+.main-nav img{
+    margin-top: 10px;
+}
+.hero-section{
+    background-image: url('../images/header-home01-header.jpg');
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background-size: cover;/*omogucava da se slik lepo fituje u skladu sa ekranom*/
+}
+.hero-section h1{
+    color:white;
+    text-transform: uppercase;
+    font-size: 63px;
+    margin-bottom: 10px;
+}
+.hero-section p{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.services h5{
+    text-align: center;
+    color: aqua;
+    text-transform: uppercase;
+}
+.services h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.services p{
+    text-align: center;
+}
+.service-item{
+    background-color:black;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+    transition: 0.4s;
+    margin-bottom: 100px;
+}
+.service-item:hover{
+    background-color:purple;
+    cursor: pointer;
+    margin-top: -30px;
+}
+.service-item p{
+    padding: 10px;
+}
+.service-item a{
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+}
+.how-it-works-section{
+    text-align: center;
+    background-image: url('../images/works.jpg');
+    background-size: cover;
+    color:white;
+    padding-top: 100px;
+}
+.how-it-works-section h3{
+    text-transform: uppercase;
+    color: blue;
+    font-size: 12px;
+    padding-bottom: 12px;
+    }
+.how-it-works-section h2{
+    text-transform: uppercase;
+}
+.how-it-works-section p{
+    padding-bottom: 50px;
+}
+.how-it-works-section a{
+     display: block;
+     position: relative;
+     bottom: -30px;
+}
+/*Linije od 130-134 omogucavaju da slika izadje iz ivica background-a*/
+
+
+.customer-say{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.customer-say h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.customer-say .testemonial{
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.customer-say .testemonial .testemonial-inner{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    position: relative;
+    
+}
+/*Linije 152,153 omogucavaju da se slika potamni i onda da se slova poput imena koja su bela lepo vide na svakoj slici*/
+
+.customer-say .testemonial .testemonial-inner .testemonial-content{
+    position: absolute;
+    bottom: 25px;
+}
+.customer-say .testemonial .testemonial-inner .testemonial-content::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 55px;
+    background-color: white;
+    left: -10px;
+    top: 5px;
+}
+
+.about{
+    background-image: url("../images/about.jpg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about .col-md-8{
+    color: white;
+}
+.about .list{
+    padding-left: 15px;
+}
+.about h3::before{
+    content: "";
+    display: inline-block;
+    background-color: #315df7;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+}
+.about h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 1px dotted #7c7586;
+    padding-bottom: 15px;
+}
+.about h1{
+    text-transform: uppercase;
+}
+
+.school-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.school-section h4{
+    color: #315df7;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.school-section h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.school-section .before-pic{
+    color: #7c7586;
+}
+.school-section .school-inner{
+    background-image: url("../images/school.jpg");
+    height: 405px;
+}
+.school-section .school-inner .school-overlay{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    padding: 50px;
+    color: white;
+}
+.school-section .school-inner .school-overlay .countdown{
+    font-size: 45px;
+    border: 1px solid;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+}
+.school-section .school-inner .school-overlay .conf span{
+    background-color: #315df7;
+    padding: 5px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 72%, 81% 100%, 0 100%, 0 0);
+}
+.school-section .school-inner .school-overlay h2{
+    font-size: 50px;
+}
+.school-section .school-inner .school-overlay .lorem{
+    margin-bottom: 45px;
+}
+
+.school-section .school-inner .school-overlay .main-cta-btn{
+    clip-path: polygon(50% 0%, 100% 0, 100% 72%, 81% 100%, 0 100%, 0 0);
+}
+.contacts-section{
+    background-image: url("../images/about.jpg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+.contacts-section h2{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.contacts-section p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contacts-section .col-md-5 h3{
+    font-size: 18px;
+    border-bottom: 1px dotted #7c7586 ;
+}
+.contacts-section .touch:before{
+    content: "";
+    display: inline-block;
+    background-color: #315df7;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 70%, 80% 100%, 0 100%, 0 0);
+
+}
+.contacts-section h3::before{
+    content: "";
+    display: inline-block;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 70%, 80% 100%, 0 100%, 0 0);
+}
+.contacts-section .col-md-5 h2{
+    font-size: 30px;
+}
+.contacts-section .col-md-5 .mobile{
+    display: inline-block;
+}
+.contacts-section .col-md-5 p{
+    display: flex;
+    margin-top: -30px
+}
+.contacts-section .col-md-5 .info{
+    margin-top: 10px;
+}
+.contacts-section form{
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.contacts-section textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 80px;
+}
+.contacts-section input, .contacts-section button{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 40px;
+}
+.contacts-section button{
+background-color: #315df7;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+clip-path: polygon(50% 0%, 100% 0, 100% 82%, 93% 100%, 0 100%, 0 0);
+margin-top: 27px;
+}
+.contacts-section label{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #7c7586;
+    font-size: 15px;
+}
+.price{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.price h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #315df7;
+}
+.price h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pricing-plan{
+    background-color: #1c2021;
+    color: white;
+    padding: 28px;
+    height: 600px;
+    padding-top: 100px;
+}
+.pricing-plan:hover{
+    background-color: #3c309d;
+    cursor: pointer;
+    margin-top: -10px;
+}
+.pricing-plan h2{
+    font-size: 30px;
+}
+.pricing-plan p{
+    color: #707374;
+    font-size: 15px;
+    border-bottom: 5px dotted #707374;
+}
+.pricing-plan ul{
+    list-style: none;
+    color: #707374;
+    margin-bottom: 50px;
+    border-top: 5px dotted #707374;;
+}
+.pricing-plan a:hover{
+    background-color:#1c2021;
+    color: white;
+}
+.pricing-plan a{
+    background-color: #315df7;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 50px;
+}
+.pricing-plan li{
+    border-bottom: 1px dotted #707374;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pricing-plan .main-num{
+    position:relative;
+    font-size: 50px;
+}
+.pricing-plan .sec-num
+{
+    position: relative;
+    top: -25px;
+}
+.pricing-plan .month
+{
+    position: relative;
+    left: -25px;
+}
+.pricing-plan .pricing-content{
+    margin: 10px;
+}
+.pricing-plan .bussines
+{
+    color: #707374;
+    text-transform: uppercase;
+    text-align: left;
+    border: none;
+    margin-top: 20px;
+}
+.profit-section{
+    background-image: url("../images/profits.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+.profit-section h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.profit-section a{
+    background-color: #315df7;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.profit-section a:hover
+{
+    cursor: pointer;
+    background-color: #3c309d;
+    transition: 0.4s;
+}
+.profit-section .btn{
+    margin-top: 45px;
+}
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 10px;
+}
+footer ul li{
+    margin-top: 10px;
+
+}
+footer h4::before{
+    content: "";
+    background-color: #315df7;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    top: -2px;
+    display: inline-block;
+    position: relative;
+}
+footer h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px dotted #7c7586;
+}
+footer li{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #707374;
+    list-style: none;    
+}
+footer .icons a i{
+    font-size: 30px;
+    margin-right: 5px;
+    color: #818181;
+}
+.after-footer{
+    background-color: #1c2021;
+    padding: 15px;
+}
+.after-footer h4{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.after-footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
